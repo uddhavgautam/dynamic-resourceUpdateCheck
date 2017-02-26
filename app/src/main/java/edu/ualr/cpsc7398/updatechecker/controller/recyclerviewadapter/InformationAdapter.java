@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -31,6 +32,8 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
         this.context = applicationContext;
     }
 
+    public InformationAdapter() {
+    }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) { //I created the viewholder for my custom row
@@ -51,6 +54,14 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
         //put the models' values in row of recycler view
         innerTextView.setText(listUrlDataGeneralInformation.get(position).getName()); //TextView
         innerEditText.setText(listUrlDataGeneralInformation.get(position).getValue()); //EditText
+
+        innerEditText.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
+                imm.showSoftInput(innerEditText, InputMethodManager.SHOW_IMPLICIT);
+            }
+        });
 
         switch (position) {
             case 0:
@@ -122,9 +133,9 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder { //can be as separate class
+        InformationAdapter informationAdapter = new InformationAdapter();
         private TextView textView1;
         private EditText editText1;
-
 
         public ViewHolder(View v) {
             super(v);
@@ -132,11 +143,29 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Log.d(TAG, "Element " + getAdapterPosition() + " clicked.");
+//                    Log.d(TAG, "Element " + getAdapterPosition() + " clicked.");
+//                    InputMethodManager imm = (InputMethodManager) informationAdapter.context.getSystemService(Context.INPUT_METHOD_SERVICE);
+//                    if(editText1.hasFocus()) {
+//                        imm.showSoftInput(editText1, InputMethodManager.SHOW_IMPLICIT);
+//                    }
+//                    else {
+//                        imm.hideSoftInputFromWindow(editText1.getWindowToken(), 0);
+//                    }
                 }
             });
             textView1 = (TextView) v.findViewById(R.id.rowRecyclerViewInformationLayoutTextView);
             editText1 = (EditText) v.findViewById(R.id.rowRecyclerViewInformationLayoutEditText);
+            editText1.setFocusable(true);
+            editText1.setClickable(true);
+
+            //The below block must do
+            editText1.setOnFocusChangeListener(new View.OnFocusChangeListener() { //this is because single click only performs focus
+                public void onFocusChange(View v, boolean hasFocus) {
+                    if (hasFocus) {
+                        v.performClick();
+                    }
+                }
+            });
         }
 
         public EditText getEditText1() {

@@ -23,6 +23,7 @@
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:ems="10"
+                android:focusable="true"
                 android:inputType="textMultiLine|number|numberSigned|numberDecimal|numberPassword|phone|datetime" />
         </LinearLayout>
     </ScrollView>

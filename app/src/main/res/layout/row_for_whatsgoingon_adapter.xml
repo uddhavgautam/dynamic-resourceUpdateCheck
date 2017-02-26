@@ -29,6 +29,7 @@
         android:layout_weight="5"
         android:background="@android:color/holo_green_light"
         android:ems="10"
+        android:focusable="true"
         android:inputType="textPersonName"
         android:padding="2dp" />
 
