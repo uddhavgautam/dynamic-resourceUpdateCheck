@@ -75,7 +75,7 @@ public class InformationAdapter extends RecyclerView.Adapter<InformationAdapter.
                 editTextLocker2.range1to600NoLeading01(2); //2 is chars limit
                 break;
             case 2:
-                innerEditText.setKeyListener(DigitsKeyListener.getInstance("0123456789"));
+                innerEditText.setKeyListener(DigitsKeyListener.getInstance("9"));
                 //control user can only input positive numbers between 1 to 999. It means 1 to 999 seconds. If more than 300 seconds, we don't treat this URI resource as dynamic
                 EditTextLocker editTextLocker3 = new EditTextLocker(innerEditText); //to update editText of EditTextLocker
                 editTextLocker3.range1to600NoLeading02(1); //1 is chars limit,

@@ -63,5 +63,5 @@ endif()
 
 
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "dl;c;dl")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/home/uddhav/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x;/home/uddhav/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/mipsel-linux-android/lib;/home/uddhav/Android/Sdk/ndk-bundle/platforms/android-21/arch-mips/usr/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/home/uddhav/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/lib/gcc/mipsel-linux-android/4.9.x;/home/uddhav/Android/Sdk/ndk-bundle/toolchains/mipsel-linux-android-4.9/prebuilt/linux-x86_64/mipsel-linux-android/lib;/home/uddhav/Android/Sdk/ndk-bundle/platforms/android-9/arch-mips/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

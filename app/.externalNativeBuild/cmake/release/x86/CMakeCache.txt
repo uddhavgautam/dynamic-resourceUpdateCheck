@@ -18,7 +18,7 @@
 ANDROID_ABI:UNINITIALIZED=x86
 
 //No help, variable specified on the command line.
-ANDROID_NATIVE_API_LEVEL:UNINITIALIZED=21
+ANDROID_NATIVE_API_LEVEL:UNINITIALIZED=9
 
 //No help, variable specified on the command line.
 ANDROID_NDK:UNINITIALIZED=/home/uddhav/Android/Sdk/ndk-bundle
@@ -184,10 +184,10 @@ Project_BINARY_DIR:STATIC=/home/uddhav/Desktop/UpdateChecker2/dynamic-resourceUp
 Project_SOURCE_DIR:STATIC=/home/uddhav/Desktop/UpdateChecker2/dynamic-resourceUpdateCheck/app
 
 //Path to a library.
-log-lib:FILEPATH=/home/uddhav/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/liblog.so
+log-lib:FILEPATH=/home/uddhav/Android/Sdk/ndk-bundle/platforms/android-9/arch-x86/usr/lib/liblog.so
 
 //Dependencies for the target
-native-lib_LIB_DEPENDS:STATIC=general;/home/uddhav/Android/Sdk/ndk-bundle/platforms/android-21/arch-x86/usr/lib/liblog.so;
+native-lib_LIB_DEPENDS:STATIC=general;/home/uddhav/Android/Sdk/ndk-bundle/platforms/android-9/arch-x86/usr/lib/liblog.so;
 
 
 ########################
