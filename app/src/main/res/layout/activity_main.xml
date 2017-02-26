@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:gravity="top|start"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <LinearLayout
+            android:id="@+id/main_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginLeft="0dp"
+                android:gravity="center|start"
+                android:paddingLeft="0dp"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@android:color/darker_gray"
+            android:elevation="11dp"
+            android:gravity="center"
+            android:text="** Information **"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/sample_content_fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_weight="0">
+
+    </FrameLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:layout_marginTop="0dp"
+            android:contextClickable="true"
+            android:cursorVisible="true"
+            android:enabled="true"
+            android:focusableInTouchMode="true"
+            android:padding="0dp"
+            android:paddingTop="0dp"
+            android:text="Ok" />
+
+    </FrameLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/statistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_margin="0dp"
+            android:background="@android:color/darker_gray"
+            android:elevation="11dp"
+            android:gravity="center"
+            android:text="** Statistics **"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sample_content_fragment2"
+        android:layout_width="match_parent"
+        android:layout_height="64dp" />
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/whatsgoingon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@android:color/darker_gray"
+            android:elevation="11dp"
+            android:gravity="center"
+            android:text="** What's going on each request? **"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sample_content_fragment3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="2dp" />
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/conclusion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@android:color/darker_gray"
+            android:elevation="11dp"
+            android:gravity="center"
+            android:text="** Conclusion **"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sample_content_fragment4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.ualr.cpsc7398.updatechecker.view.activity.AboutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:gravity="top|start"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <LinearLayout
+            android:id="@+id/main_toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|start"
+                android:layout_marginLeft="0dp"
+                android:gravity="center|start"
+                android:paddingLeft="0dp"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/aboutTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        android:elevation="2dp"
+        android:gravity="fill_vertical|center"
+        android:text="Developer: Uddhav Gautam, upgautam@ualr.edu
+        Supervisor: Dr. Kenji Yoshigoe, kxyoshigoe@ualr.edu"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        android:textStyle="normal|bold" />
+</LinearLayout>

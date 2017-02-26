@@ -1,0 +1,3 @@
+/home/uddhav/Desktop/UpdateChecker2/dynamic-resourceUpdateCheck/app/.externalNativeBuild/cmake/release/mips/CMakeFiles/rebuild_cache.dir
+/home/uddhav/Desktop/UpdateChecker2/dynamic-resourceUpdateCheck/app/.externalNativeBuild/cmake/release/mips/CMakeFiles/edit_cache.dir
+/home/uddhav/Desktop/UpdateChecker2/dynamic-resourceUpdateCheck/app/.externalNativeBuild/cmake/release/mips/CMakeFiles/native-lib.dir
